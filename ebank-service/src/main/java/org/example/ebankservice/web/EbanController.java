@@ -23,7 +23,7 @@ public class EbanController {
     }
     @PostMapping("/BankAccounts")
     public BankAccount save(@RequestBody BankAccount BankAccount){
-        return ebankService.save(BankAccount);
+        return ebankService.save(BankAccount.getIdclient(),BankAccount.getBalance(),BankAccount.getType());
 
     }
 }

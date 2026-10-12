@@ -1,4 +1,5 @@
-# Microservice customer
+# Projet de systèmes distribués
+![img_49.png](img_49.png)
 ## customer service
 ![img.png](img.png)
 ![img_2.png](img_2.png)
@@ -55,3 +56,43 @@
 ![img_27.png](img_27.png)
 ![img_30.png](img_30.png)
 ![img_31.png](img_31.png)
+
+## ChatBot service 
+
+![img_33.png](img_33.png)
+![img_32.png](img_32.png)
+
+### test avec swagger 
+
+![img_34.png](img_34.png)
+
+### ajouter une memoire  au llm 
+![img_35.png](img_35.png)
+
+### MCP (Client - Server )
+![img_38.png](img_38.png)
+
+![img_36.png](img_36.png)
+![img_41.png](img_41.png)
+- exposer tolls de customer service 
+![img_37.png](img_37.png)
+
+![img_39.png](img_39.png)
+![img_43.png](img_43.png)
+
+- exposer tolls de ebank service 
+![img_37.png](img_37.png)
+![img_40.png](img_40.png)
+![img_42.png](img_42.png)
+
+### discord 
+
+![img_47.png](img_47.png)
+
+![img_46.png](img_46.png)
+
+![img_45.png](img_45.png)
+
+
+
+
