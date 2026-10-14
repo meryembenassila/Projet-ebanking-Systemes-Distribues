@@ -94,5 +94,14 @@
 ![img_45.png](img_45.png)
 
 
+### telegram 
 
+![img_51.png](img_51.png)
+
+![img_50.png](img_50.png)
+
+
+
+
+## Angular
 
