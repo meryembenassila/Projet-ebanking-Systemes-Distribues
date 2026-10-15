@@ -100,8 +100,5 @@
 
 ![img_50.png](img_50.png)
 
-
-
-
 ## Angular
 
