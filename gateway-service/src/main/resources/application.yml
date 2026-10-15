@@ -14,3 +14,16 @@
 #              predicates:
 #                - Path=/BankAccounts/**
 #
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          globalcors:
+            cors-configurations:
+              '[/**]':
+                allowedOrigins:
+                  - "http://localhost:4200"
+                allowedMethods: "*"
+                allowedHeaders: "*"
+
