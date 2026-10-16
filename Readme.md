@@ -103,7 +103,7 @@
 ## Angular
 
 ### page accounts
-
+![img_56.png](img_56.png)
 ### page bot
 ![img_53.png](img_53.png)
 ![img_54.png](img_54.png)

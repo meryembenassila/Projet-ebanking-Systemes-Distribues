@@ -10,7 +10,7 @@
       >
 
       <button
-        (click)="askAgent()"
+        (click)="askAgentStream()"
         class="btn btn-primary"
         type="button">
         <i class="bi bi-search"></i>
@@ -25,8 +25,10 @@
   </div>
 
   <div class="card-body">
-    @if (response$ | async; as botResponse) {
-    <markdown [data]="botResponse"></markdown>
+    @if (response$ | async; as res) {
+      @if(res.type=="Response") {
+        <markdown [data]="res.content"></markdown>
+      }
 
     }
   </div>

@@ -6,6 +6,7 @@ import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 
 import java.util.Map;
 
@@ -48,4 +49,21 @@ public class EbankIaAgent {
     // .prompt(query) : prépare le message à envoyer au LLM
     // .call()        : envoie la requête au LLM via Spring AI
     // .content()     : récupère le texte de la réponse du LLM
+
+    public Flux<String> chatStream(String conversationId, String query) {
+
+        return chatClient.prompt()
+                .user(query)
+                .options(
+                        OpenAiChatOptions.builder()
+                                .extraBody(
+                                        Map.of("include_reasoning", false)
+                                )
+                )
+                .advisors(advisor -> advisor
+                        .param(ChatMemory.CONVERSATION_ID, conversationId)
+                )
+                .stream()
+                .content();
+    }
 }
