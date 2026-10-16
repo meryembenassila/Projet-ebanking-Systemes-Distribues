@@ -102,3 +102,9 @@
 
 ## Angular
 
+### page accounts
+
+### page bot
+![img_53.png](img_53.png)
+![img_54.png](img_54.png)
+![img_55.png](img_55.png)

@@ -1,0 +1,33 @@
+
+<div class="p-3">
+  <div class="card-body">
+    <div class="d-flex gap-2">
+      <input
+        [(ngModel)]="query"
+        type="text"
+        class="form-control"
+        placeholder="Écrivez votre message..."
+      >
+
+      <button
+        (click)="askAgent()"
+        class="btn btn-primary"
+        type="button">
+        <i class="bi bi-search"></i>
+      </button>
+
+      @if (loadingService.isLoading()) {
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading…</span>
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="card-body">
+    @if (response$ | async; as botResponse) {
+    <markdown [data]="botResponse"></markdown>
+
+    }
+  </div>
+</div>
